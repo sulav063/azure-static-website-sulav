@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Azure Static Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #eef4ff;
+            padding: 60px 20px;
+        }
+        .container {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 { color: #0078d4; }
+        button {
+            background: #0078d4;
+            color: white;
+            padding: 12px 22px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Azure Static Website Sulav!</h1>
+        <p>This website is hosted using Microsoft Azure Static Web Apps.</p>
+        <p>Lab 6 - Cloud Computing Sulav</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText =
+                "My Azure website is working successfully!";
+        }
+    </script>
+</body>
+</html>
